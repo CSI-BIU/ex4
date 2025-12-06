@@ -1,0 +1,11 @@
+3
+3
+The program
+The compiler
+The student
+2
+executes
+debugs
+1
+the code
+6

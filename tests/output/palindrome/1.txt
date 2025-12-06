@@ -1,0 +1,24 @@
+Please choose a task (1-5) or 6 to exit:
+1. Reverse a word
+2. Check Palindrome
+3. Generate sentences
+4. Solve Zip Board
+5. Solve Sudoku
+6. Exit
+Please insert the phrase length:
+Please insert the phrase to check:
+The phrase is a palindrome.
+
+=============================
+
+Please choose a task (1-5) or 6 to exit:
+1. Reverse a word
+2. Check Palindrome
+3. Generate sentences
+4. Solve Zip Board
+5. Solve Sudoku
+6. Exit
+Goodbye!
+
+=============================
+

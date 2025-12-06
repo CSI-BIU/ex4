@@ -1,0 +1,34 @@
+Please choose a task (1-5) or 6 to exit:
+1. Reverse a word
+2. Check Palindrome
+3. Generate sentences
+4. Solve Zip Board
+5. Solve Sudoku
+6. Exit
+Please insert number of subjects:
+Please insert the list of subjects:
+1. 2. 3. Please insert number of verbs:
+Please insert the list of verbs:
+1. 2. Please insert number of objects:
+Please insert the list of objects:
+1. List of Sentences:
+1. The program executes the code
+2. The program debugs the code
+3. The compiler executes the code
+4. The compiler debugs the code
+5. The student executes the code
+6. The student debugs the code
+
+=============================
+
+Please choose a task (1-5) or 6 to exit:
+1. Reverse a word
+2. Check Palindrome
+3. Generate sentences
+4. Solve Zip Board
+5. Solve Sudoku
+6. Exit
+Goodbye!
+
+=============================
+

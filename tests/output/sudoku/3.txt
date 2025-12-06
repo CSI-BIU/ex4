@@ -1,0 +1,36 @@
+Please choose a task (1-5) or 6 to exit:
+1. Reverse a word
+2. Check Palindrome
+3. Generate sentences
+4. Solve Zip Board
+5. Solve Sudoku
+6. Exit
+Please enter the sudoku board:
+Solution found:
++-------+-------+-------+
+| 1 2 3 | 4 5 6 | 7 8 9 | 
+| 4 5 6 | 7 8 9 | 1 2 3 | 
+| 7 8 9 | 1 2 3 | 4 5 6 | 
++-------+-------+-------+
+| 2 1 4 | 3 6 5 | 8 9 7 | 
+| 3 6 5 | 8 9 7 | 2 1 4 | 
+| 8 9 7 | 2 1 4 | 3 6 5 | 
++-------+-------+-------+
+| 5 3 1 | 6 4 2 | 9 7 8 | 
+| 6 4 2 | 9 7 8 | 5 3 1 | 
+| 9 7 8 | 5 3 1 | 6 4 2 | 
++-------+-------+-------+
+
+=============================
+
+Please choose a task (1-5) or 6 to exit:
+1. Reverse a word
+2. Check Palindrome
+3. Generate sentences
+4. Solve Zip Board
+5. Solve Sudoku
+6. Exit
+Goodbye!
+
+=============================
+

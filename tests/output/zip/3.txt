@@ -1,0 +1,31 @@
+Please choose a task (1-5) or 6 to exit:
+1. Reverse a word
+2. Check Palindrome
+3. Generate sentences
+4. Solve Zip Board
+5. Solve Sudoku
+6. Exit
+Please enter the board size:
+Please enter the highest tile value:
+Please enter the grid:
+Solution:
+D R D R D X 
+D U D U D U 
+D U D U D U 
+D U D U D U 
+D U D U D U 
+R U R U R U 
+
+=============================
+
+Please choose a task (1-5) or 6 to exit:
+1. Reverse a word
+2. Check Palindrome
+3. Generate sentences
+4. Solve Zip Board
+5. Solve Sudoku
+6. Exit
+Goodbye!
+
+=============================
+
