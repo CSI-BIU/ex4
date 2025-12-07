@@ -12,7 +12,7 @@
 
 
 #define LONGEST_TERM 20
-#define LONGEST_SENTENCE 100
+#define LONGEST_SENTENCE 62
 #define MAX_NUMBER_OF_TERMS 10
 
 #define ZIP_MAX_GRID_SIZE 20
@@ -30,12 +30,12 @@ void task5SolveSudoku();
 
 void task1ReverseWordImplementation();
 int task2CheckPalindromeImplementation(int);
-void task3generateSentencesImplementation(char[][LONGEST_TERM], int, char[][LONGEST_TERM], int, char[][LONGEST_TERM], int);
+void task3generateSentencesImplementation(char[][LONGEST_TERM+1], int, char[][LONGEST_TERM+1], int, char[][LONGEST_TERM+1], int);
 int task4SolveZipBoardImplementation(int [ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE], char[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE], int, int, int, int);
 int task5SolveSudokuImplementation(int board[SUDOKU_GRID_SIZE][SUDOKU_GRID_SIZE]);
 
 
-int readTerms(char[][LONGEST_TERM], int, char[]);
+int readTerms(char[][LONGEST_TERM+1], int, char[]);
 void printSudoku(int[SUDOKU_GRID_SIZE][SUDOKU_GRID_SIZE]);
 
 
@@ -204,7 +204,7 @@ void task5SolveSudoku()
 ****************************/
 
 
-int readTerms(char terms[][LONGEST_TERM], int maxNumOfTerms, char type[]){
+int readTerms(char terms[][LONGEST_TERM+1], int maxNumOfTerms, char type[]){
     int termsCount;
     printf("Please insert number of %s:\n", type);
     scanf("%d", &termsCount);
@@ -254,7 +254,7 @@ int task2CheckPalindromeImplementation(int length)
 }
 
 
-void task3generateSentencesImplementation(char subjects[][LONGEST_TERM], int subjectsCount, char verbs[][LONGEST_TERM], int verbsCount, char objects[][LONGEST_TERM], int objectsCount){
+void task3generateSentencesImplementation(char subjects[][LONGEST_TERM+1], int subjectsCount, char verbs[][LONGEST_TERM+1], int verbsCount, char objects[][LONGEST_TERM+1], int objectsCount){
 
 }
 
