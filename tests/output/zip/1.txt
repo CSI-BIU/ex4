@@ -1,19 +1,18 @@
 Please choose a task (1-5) or 6 to exit:
-1. Reverse a word
+1. Reverse a phrase
 2. Check Palindrome
 3. Generate sentences
 4. Solve Zip Board
 5. Solve Sudoku
 6. Exit
 Please enter the board size:
-Please enter the highest tile value:
 Please enter the grid:
 No solution exists.
 
 =============================
 
 Please choose a task (1-5) or 6 to exit:
-1. Reverse a word
+1. Reverse a phrase
 2. Check Palindrome
 3. Generate sentences
 4. Solve Zip Board

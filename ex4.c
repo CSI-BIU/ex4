@@ -1,7 +1,10 @@
 #include <stdio.h>
-#include <limits.h>
 #include <strings.h>
 
+
+/***************************
+******** Menu Items ********
+****************************/
 
 #define REVERSE 1
 #define PALINDROME 2
@@ -10,6 +13,10 @@
 #define SUDOKU 5
 #define EXIT 6
 
+
+/***************************
+*** DIMENSION PARAMETERS ***
+****************************/
 
 #define LONGEST_TERM 20
 #define LONGEST_SENTENCE 62
@@ -21,23 +28,40 @@
 #define SUDOKU_SUBGRID_SIZE 3
 
 
-void task1ReverseWord();
+/***************************
+* USER INTEFACE PROTOTYPES *
+****************************/
+
+void task1ReversePhrase();
 void task2CheckPalindrome();
 void task3GenerateSentences();
 void task4SolveZipBoard();
 void task5SolveSudoku();
 
 
-void task1ReverseWordImplementation();
+/****************************
+* IMPLEMENTATION PROTOTYPES *
+*****************************/
+
+void task1ReversePhraseImplementation();
 int task2CheckPalindromeImplementation(int);
 void task3generateSentencesImplementation(char[][LONGEST_TERM+1], int, char[][LONGEST_TERM+1], int, char[][LONGEST_TERM+1], int);
-int task4SolveZipBoardImplementation(int [ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE], char[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE], int, int, int, int);
-int task5SolveSudokuImplementation(int board[SUDOKU_GRID_SIZE][SUDOKU_GRID_SIZE]);
+int task4SolveZipBoardImplementation(int[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE], char[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE], int, int, int, int);
+int task5SolveSudokuImplementation(int[SUDOKU_GRID_SIZE][SUDOKU_GRID_SIZE]);
 
+
+/******************************
+* HELPER FUNCTIONS PROTOTYPES *
+*******************************/
 
 int readTerms(char[][LONGEST_TERM+1], int, char[]);
 void printSudoku(int[SUDOKU_GRID_SIZE][SUDOKU_GRID_SIZE]);
 
+
+
+/******************************
+********** MAIN MENU **********
+*******************************/
 
 int main()
 {
@@ -45,7 +69,7 @@ int main()
     do
     {
         printf("Please choose a task (1-5) or 6 to exit:\n");
-        printf("%d. Reverse a word\n", REVERSE);
+        printf("%d. Reverse a phrase\n", REVERSE);
         printf("%d. Check Palindrome\n", PALINDROME);
         printf("%d. Generate sentences\n", SENTENCES);
         printf("%d. Solve Zip Board\n", ZIP);
@@ -57,7 +81,7 @@ int main()
         switch (task)
         {
         case REVERSE:
-            task1ReverseWord();
+            task1ReversePhrase();
             break;
         case PALINDROME:
             task2CheckPalindrome();
@@ -90,10 +114,10 @@ int main()
 ****************************/
 
 
-void task1ReverseWord()
+void task1ReversePhrase()
 {
     printf("Please insert the phrase to reverse:\n");
-    task1ReverseWordImplementation();
+    task1ReversePhraseImplementation();
     printf("\n");
 }
 
@@ -114,9 +138,9 @@ void task2CheckPalindrome()
 
 void task3GenerateSentences()
 {
-    char subjects[MAX_NUMBER_OF_TERMS][LONGEST_TERM];
-    char verbs[MAX_NUMBER_OF_TERMS][LONGEST_TERM];
-    char objects[MAX_NUMBER_OF_TERMS][LONGEST_TERM];
+    char subjects[MAX_NUMBER_OF_TERMS][LONGEST_TERM+1];
+    char verbs[MAX_NUMBER_OF_TERMS][LONGEST_TERM+1];
+    char objects[MAX_NUMBER_OF_TERMS][LONGEST_TERM+1];
     int subjectsCount, verbsCount, objectsCount;
 
     subjectsCount=readTerms(subjects, MAX_NUMBER_OF_TERMS, "subjects");
@@ -133,7 +157,7 @@ void task4SolveZipBoard()
     int board[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE] = {0};
     char solution[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE] = {0};
     int row, col;
-    int highest;
+    int highest=0;
     printf("Please enter the board size:\n");
     scanf("%d", &size);
     if (size < 1 || size > ZIP_MAX_GRID_SIZE)
@@ -141,9 +165,7 @@ void task4SolveZipBoard()
         printf("Invalid board size.\n");
         return;
     }
-    printf("Please enter the highest tile value:\n");
 
-    scanf("%d", &highest);
     printf("Please enter the grid:\n");
     for (int i = 0; i < size; i++)
     {
@@ -154,6 +176,9 @@ void task4SolveZipBoard()
             {
                 row = i;
                 col = j;
+            }
+            if(board[i][j]>highest){
+                highest=board[i][j];
             }
         }
     }
@@ -243,7 +268,7 @@ void printSudoku(int board[SUDOKU_GRID_SIZE][SUDOKU_GRID_SIZE])
 ****************************/
 
 
-void task1ReverseWordImplementation(){
+void task1ReversePhraseImplementation(){
 
 }
 

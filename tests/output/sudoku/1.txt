@@ -1,5 +1,5 @@
 Please choose a task (1-5) or 6 to exit:
-1. Reverse a word
+1. Reverse a phrase
 2. Check Palindrome
 3. Generate sentences
 4. Solve Zip Board
@@ -11,7 +11,7 @@ No solution exists.
 =============================
 
 Please choose a task (1-5) or 6 to exit:
-1. Reverse a word
+1. Reverse a phrase
 2. Check Palindrome
 3. Generate sentences
 4. Solve Zip Board
