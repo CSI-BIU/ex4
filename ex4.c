@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <strings.h>
+#include <string.h>
 
 
 /***************************
@@ -233,6 +233,9 @@ int readTerms(char terms[][LONGEST_TERM+1], int maxNumOfTerms, char type[]){
     int termsCount;
     printf("Please insert number of %s:\n", type);
     scanf("%d", &termsCount);
+    if(termsCount < 1 || termsCount > maxNumOfTerms){
+        termsCount = maxNumOfTerms;
+    }
     printf("Please insert the list of %s:\n", type);
     for(int i=0;i<termsCount;i++){
         printf("%d. ",i+1);
