@@ -45,8 +45,10 @@ void task5SolveSudoku();
 
 void task1ReversePhraseImplementation();
 int task2CheckPalindromeImplementation(int);
-void task3GenerateSentencesImplementation(char[][LONGEST_TERM+1], int, char[][LONGEST_TERM+1], int, char[][LONGEST_TERM+1], int);
-int task4SolveZipBoardImplementation(int[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE], char[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE], int, int, int, int);
+void task3GenerateSentencesImplementation(char[][LONGEST_TERM+1], int, char[][LONGEST_TERM+1], int,
+                                            char[][LONGEST_TERM+1], int);
+int task4SolveZipBoardImplementation(int[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE],
+                                        char[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE], int, int, int, int);
 int task5SolveSudokuImplementation(int[SUDOKU_GRID_SIZE][SUDOKU_GRID_SIZE]);
 
 
@@ -282,12 +284,16 @@ int task2CheckPalindromeImplementation(int length)
 }
 
 
-void task3GenerateSentencesImplementation(char subjects[][LONGEST_TERM+1], int subjectsCount, char verbs[][LONGEST_TERM+1], int verbsCount, char objects[][LONGEST_TERM+1], int objectsCount){
+void task3GenerateSentencesImplementation(char subjects[][LONGEST_TERM+1], int subjectsCount,
+                                            char verbs[][LONGEST_TERM+1], int verbsCount,
+                                            char objects[][LONGEST_TERM+1], int objectsCount){
 
 }
 
 
-int task4SolveZipBoardImplementation(int board[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE], char solution[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE], int size, int startR, int startC, int highest)
+int task4SolveZipBoardImplementation(int board[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE],
+                                    char solution[ZIP_MAX_GRID_SIZE][ZIP_MAX_GRID_SIZE],
+                                    int size, int startR, int startC, int highest)
 {
     return 0;
 }
